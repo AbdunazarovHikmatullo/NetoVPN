@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">NetoVPN</title>
+  <rect width="48" height="48" rx="12" fill="#121A2E"/>
+  <path d="M14 34V14h5.2l9.6 13.4V14H34v20h-5.2L19.2 20.6V34H14Z" fill="#E8EDF7"/>
+  <circle cx="34" cy="14" r="3.2" fill="#C4783A"/>
+</svg>

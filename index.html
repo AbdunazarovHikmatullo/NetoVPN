@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NetoVPN — бесперебойный безопасный VPN</title>
+    <meta
+      name="description"
+      content="NetoVPN — бесперебойный безопасный VPN. Бесплатная пробная версия и продажа .conf файлов для быстрого подключения."
+    />
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">К содержимому</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top">
+          <img src="img/logo.svg" width="36" height="36" alt="" />
+          NetoVPN
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Открыть меню">
+          Меню
+        </button>
+        <nav class="nav" id="site-nav">
+          <a href="#about">О сервисе</a>
+          <a href="#how">Как начать</a>
+          <a href="#plans">Тарифы</a>
+          <a href="#faq">Вопросы</a>
+          <a class="btn btn-primary" href="#plans">Купить .conf</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="wrap hero" id="top">
+        <div>
+          <p class="kicker"><span class="pulse-dot" aria-hidden="true"></span> Канал активен</p>
+          <h1>Бесперебойный безопасный VPN</h1>
+          <p class="lede">
+            NetoVPN держит соединение стабильным и шифрует трафик. Попробуйте бесплатно, затем купите готовый
+            <code>.conf</code> и подключитесь за минуту.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" type="button" data-open-trial>Получить пробный доступ</button>
+            <a class="btn btn-ghost" href="#plans">Купить .conf файл</a>
+          </div>
+        </div>
+        <aside class="conf-card" aria-label="Пример конфигурации NetoVPN">
+          <div class="conf-top">
+            <span>netovpn-client.conf</span>
+            <span>WireGuard</span>
+          </div>
+          <pre class="conf-body"><code><span class="key">[Interface]</span>
+PrivateKey = <span class="val">••••••••••••••••</span>
+Address    = <span class="val">10.8.0.12/32</span>
+DNS        = <span class="val">1.1.1.1</span>
+
+<span class="key">[Peer]</span>
+PublicKey  = <span class="val">nV7p…Neto</span>
+Endpoint   = <span class="val">vpn.netovpn.io:51820</span>
+AllowedIPs = <span class="val">0.0.0.0/0</span></code></pre>
+          <div class="tunnel" aria-hidden="true"><span></span></div>
+        </aside>
+      </section>
+
+      <section class="wrap section" id="about">
+        <div class="section-head">
+          <h2>Почему NetoVPN</h2>
+          <p class="muted">Короткий путь к защищённому каналу: без лишнего клиента, с файлом конфигурации, который вы контролируете.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card">
+            <img src="img/mark-pulse.svg" width="28" height="28" alt="" />
+            <h3>Бесперебойность</h3>
+            <p class="muted">Канал рассчитан на постоянную работу: меньше обрывов, быстрее восстановление сессии.</p>
+          </article>
+          <article class="card">
+            <img src="img/mark-lock.svg" width="28" height="28" alt="" />
+            <h3>Безопасность</h3>
+            <p class="muted">Трафик шифруется на всём пути. Вы получаете изолированный туннель, а не «просто прокси».</p>
+          </article>
+          <article class="card">
+            <img src="img/mark-file.svg" width="28" height="28" alt="" />
+            <h3>Файлы .conf</h3>
+            <p class="muted">Готовый конфиг для WireGuard-совместимых клиентов: импортировали — подключились.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap section" id="how">
+        <div class="section-head">
+          <h2>Как это работает</h2>
+          <p class="muted">Сначала пробуете. Если канал подходит — покупаете свой .conf.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-index">01</div>
+            <div>
+              <h3>Пробный доступ</h3>
+              <p class="muted">Оставляете email и получаете временный конфиг, чтобы проверить скорость и стабильность.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-index">02</div>
+            <div>
+              <h3>Импорт .conf</h3>
+              <p class="muted">Открываете клиент WireGuard, добавляете файл и включаете туннель на телефоне или компьютере.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-index">03</div>
+            <div>
+              <h3>Покупка своего файла</h3>
+              <p class="muted">После пробного периода покупаете постоянный .conf — это ваш рабочий ключ к NetoVPN.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap section" id="plans">
+        <div class="section-head">
+          <h2>Пробный период и покупка</h2>
+          <p class="muted">Два понятных шага. Без скрытых подписок в интерфейсе — вы платите за конфигурацию.</p>
+        </div>
+        <div class="plans">
+          <article class="plan">
+            <p class="kicker">Старт</p>
+            <h3>Бесплатная проба</h3>
+            <p class="price">0 ₽</p>
+            <p class="muted">Временный доступ, чтобы оценить NetoVPN на своих устройствах.</p>
+            <ul>
+              <li>Временный .conf файл</li>
+              <li>Шифрованный туннель</li>
+              <li>Проверка стабильности канала</li>
+            </ul>
+            <button class="btn btn-ghost" type="button" data-open-trial>Запросить пробу</button>
+          </article>
+          <article class="plan featured">
+            <p class="kicker">Основной продукт</p>
+            <h3>Файл .conf</h3>
+            <p class="price">Купить</p>
+            <p class="muted">Постоянная конфигурация для вашего устройства. Импорт в клиент — и канал ваш.</p>
+            <ul>
+              <li>Персональный .conf</li>
+              <li>Бесперебойный доступ</li>
+              <li>Подходит для ПК, Android и iOS</li>
+            </ul>
+            <a class="btn btn-primary" href="mailto:sales@netovpn.example?subject=Покупка%20.conf%20NetoVPN">Написать о покупке</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap section faq" id="faq">
+        <div class="section-head">
+          <h2>Частые вопросы</h2>
+        </div>
+        <details>
+          <summary>Что такое .conf файл?</summary>
+          <p>Это текстовый файл конфигурации VPN. NetoVPN выдаёт готовый .conf: вы импортируете его в клиент и подключаетесь без ручной настройки ключей.</p>
+        </details>
+        <details>
+          <summary>Нужно ли устанавливать отдельное приложение NetoVPN?</summary>
+          <p>Нет. Достаточно совместимого клиента (например, WireGuard). Сервис продаёт конфигурацию, а не тяжёлый установщик.</p>
+        </details>
+        <details>
+          <summary>Чем пробная версия отличается от покупки?</summary>
+          <p>Проба ограничена по времени и нужна для проверки канала. Купленный .conf — ваш постоянный доступ к бесперебойному безопасному VPN.</p>
+        </details>
+      </section>
+
+      <section class="wrap section">
+        <div class="cta-band">
+          <div>
+            <h2>Держите канал включённым</h2>
+            <p class="muted">Начните с бесплатной пробы или сразу закажите свой .conf.</p>
+          </div>
+          <div class="hero-actions">
+            <button class="btn btn-primary" type="button" data-open-trial>Пробный доступ</button>
+            <a class="btn btn-ghost" href="#plans">К тарифам</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>© 2026 NetoVPN. Бесперебойный безопасный VPN.</p>
+        <p>Пробная версия · продажа .conf файлов</p>
+      </div>
+    </footer>
+
+    <dialog class="dialog" id="trial-dialog" aria-labelledby="trial-title">
+      <form class="dialog-inner" id="trial-form">
+        <h2 id="trial-title">Бесплатная пробная версия</h2>
+        <p class="muted">Укажите email — пришлём временный .conf для проверки NetoVPN.</p>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@email.com" />
+        </div>
+        <p class="form-msg" id="trial-msg" role="status"></p>
+        <div class="dialog-actions">
+          <button class="btn btn-ghost" type="button" data-close-trial>Отмена</button>
+          <button class="btn btn-primary" type="submit">Отправить заявку</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
